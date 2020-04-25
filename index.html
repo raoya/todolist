@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="https://kit.fontawesome.com/d245340b83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-option seleted">
+            My Task
+        </div>
+        <div class="header-option">
+            In Progress
+        </div>
+        <div class="header-option">
+            Completed
+        </div>
+    </div>
+    <div class="main">
+        <div class="todlist" id="todoList">
+            <div class="add-todo todo-item">
+                <div class="add-todo-header">
+                    <input id="checkBox" type="checkbox">
+                    <div class="todo-title" id="addTitle">Type Something Here…</div>
+                    <input type="text" class="titleInput" id="addTitleInput" value="Type Something Here…">
+                    <div class="star">
+                        <i class="far fa-star star-off"></i>
+                        <i class="fas fa-star star-on"></i>
+                    </div>
+                    <div class="edit">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                </div>
+                <div class="add-todo-content">
+                    <div class="add-todo-content-title">
+                        <i class="far fa-calendar-alt"></i>
+                        Deadline</br>
+                        <div class="add-todo-date">
+                            <input type="date" id="date">
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+                    <div class="add-todo-content-title">
+                        <i class="far fa-comment-dots"></i>
+                        Comment</br>
+                        <div class="add-todo-comment">
+                            <textarea id="comment" placeholder="Type your memo here…"></textarea>
+                        </div>
+                    </div>
+                    <div class="add-todo-button">
+                        <div class="add-todo-cancel">
+                            <i class="fas fa-times"></i>
+                            Cancel
+                        </div>
+                        <div class="add-todo-task">
+                            <i class="fas fa-plus"></i>
+                            Add Task
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="todo">
+                <div class="todo-item">
+                    <div class="todo-item-header">
+                        <input type="checkbox">
+                        <div class="todo-title">Type Something Here…</div>
+                        <input type="text" class="titleInput" value="Type Something Here…">
+                        <div class="star">
+                            <i class="far fa-star star-off"></i>
+                            <i class="fas fa-star star-on"></i>
+                        </div>
+                        <div class="edit">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="todo-information">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            5/14
+                        </div>
+                        <div class="file">
+                            <i class="far fa-file"></i>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-dots"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="todo-item-header">
+                        <input type="checkbox">
+                        <div class="todo-title">Type Something Here…</div>
+                        <input type="text" class="titleInput" value="Type Something Here…">
+                        <div class="star">
+                            <i class="far fa-star star-off"></i>
+                            <i class="fas fa-star star-on"></i>
+                        </div>
+                        <div class="edit">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="todo-information">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            5/14
+                        </div>
+                        <div class="file">
+                            <i class="far fa-file"></i>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-dots"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="todo-item-header">
+                        <input type="checkbox">
+                        <div class="todo-title">Type Something Here…</div>
+                        <input type="text" class="titleInput" value="Type Something Here…">
+                        <div class="star">
+                            <i class="far fa-star star-off"></i>
+                            <i class="fas fa-star star-on"></i>
+                        </div>
+                        <div class="edit">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="todo-information">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            5/14
+                        </div>
+                        <div class="file">
+                            <i class="far fa-file"></i>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-dots"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="todo-item-header">
+                        <input type="checkbox">
+                        <div class="todo-title">Type Something Here…</div>
+                        <input type="text" class="titleInput" value="Type Something Here…">
+                        <div class="star">
+                            <i class="far fa-star star-off"></i>
+                            <i class="fas fa-star star-on"></i>
+                        </div>
+                        <div class="edit">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="todo-information">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            5/14
+                        </div>
+                        <div class="file">
+                            <i class="far fa-file"></i>
+                        </div>
+                        <div class="comment">
+                            <i class="far fa-comment-dots"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="count">
+            4 tasks left
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
+</html>
